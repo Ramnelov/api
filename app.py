@@ -1,7 +1,7 @@
 from flask import Flask, request
 from waitress import serve
 
-from utils.supabase import supabase
+from utils.supabase_config import supabase
 
 app = Flask(__name__)
 
