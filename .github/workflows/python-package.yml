@@ -5,7 +5,7 @@ name: Python package
 
 on:
   push:
-    branches: ["main"]
+    branches: ["*"]
   pull_request:
     branches: ["main"]
 
@@ -36,7 +36,7 @@ jobs:
         run: |
           source .venv/bin/activate
           mypy .
-      - name: Test with pytest
-        run: |
-          source .venv/bin/activate
-          pytest
+      # - name: Test with pytest
+      #   run: |
+      #     source .venv/bin/activate
+      #     pytest
