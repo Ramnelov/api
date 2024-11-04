@@ -35,7 +35,6 @@ jobs:
       - name: Type check with mypy
         run: |
           source .venv/bin/activate
-          mypy --install-types
           mypy .
       - name: Test with pytest
         run: |
