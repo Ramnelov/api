@@ -6,7 +6,7 @@ from utils.supabase_config import supabase
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/v1/")
 def index():
     auth_header = request.headers.get("Authorization")
     if auth_header and auth_header.startswith("Bearer "):
